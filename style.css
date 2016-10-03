@@ -1,0 +1,229 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  background: #f2f2f2;
+  color: gray;
+}
+
+h1{font-size: 3em;}
+/* MENU SIDE*/
+.toggle > span{
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: -7px;
+    }
+
+.toggle{
+  font-size: 30px;
+  color: #5f90b8;
+  -webkit-transition: all 0.15s ease-out 0;
+  -moz-transition: all 0.15s ease-out 0;
+  transition: all 0.15s ease-out 0;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 90;
+    padding: 10px 6px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: rgba(0,0,0,0.8);
+  font-size: 18px;
+  width: 45%;
+  height: 100%;
+  top: 0;
+  right: -45%;
+  opacity: 0;
+  -webkit-transition: all 0.5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+     -moz-transition: all 0.5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+          transition: all 0.5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+  z-index: 9;
+  white-space: nowrap;
+  text-overflow: clip;
+}
+
+.sidebar ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sidebar ul li{margin: 0 0 35px; text-align: center;}
+.sidebar ul li a{
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.sidebar ul li:hover a{
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#sidebartoggler:checked + #page .sidebar{
+	right: 0;
+	opacity: 1;
+  }
+
+#sidebartoggler:checked + #page .sidebar-left{
+	opacity: 1;
+	z-index: 8;
+  }
+
+section{
+  width: 90%;
+  height: 100vh;
+  padding: 0 5%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+#home{
+  background: url("images/henrry.jpg") no-repeat right center #e1e9f0;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+#skills{
+  background: url("images/code.jpg") no-repeat right center #00081f;
+    background-size: auto 90%;
+    background-attachment: fixed;
+    color: white;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+.descrip{
+  color:  #788592;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding: 10px 0;
+}
+
+#home .text{
+  background: #2196F3;
+  background: -webkit-linear-gradient(#2196F3, #333);
+  background: -o-linear-gradient(#2196F3, #333);
+  background: -moz-linear-gradient(#2196F3, #333);
+  background: linear-gradient(#2196F3, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tag{
+  font-size: 22px;
+  background: #8BC34A;
+  background: -webkit-linear-gradient(#8BC34A, #03A9F4);
+  background: -o-linear-gradient(#8BC34A, #03A9F4);
+  background: -moz-linear-gradient(#8BC34A, #03A9F4);
+  background: linear-gradient(#8BC34A, #03A9F4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cita{
+  text-align: center;
+  margin-top: 115px;
+  color: #000;
+}
+.cita:after{
+  content: "";
+  display: table;
+  background: #000;
+  padding: 0.5px;
+  width: 45%;
+  margin: 30px auto 0;
+}
+
+#skills .text{width: 65%;}
+
+.h-skills{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  align-items: center;
+  background: rgba(0,0,0,0.4);
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 28px 0;
+}
+
+.skill-box {
+  border: 1px solid;
+  width: 115px;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.header-skill {
+  border-bottom: 1px solid;
+  font-size: 26px;
+  padding: 5px;
+}
+
+.percentage {
+  font-weight: bold;
+  font-size: 40px;
+  border-bottom: 1px solid;
+  padding: 13px;
+  position: relative;
+  z-index: 0;
+}
+
+.skill-title {
+  color: #00abfe;
+  background: white;
+  padding: 20px 0;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+
+.percentage:after{
+  content: "";
+  background: #00abfe;
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.skill-box:nth-child(2) .percentage:after{height: 75%;}
+.skill-box:nth-child(4) .percentage:after{height: 50%;}
