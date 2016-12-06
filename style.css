@@ -92,7 +92,7 @@ h1{font-size: 3em;}
 	z-index: 8;
   }
 
-section{
+.flex{
   width: 90%;
   height: 100vh;
   padding: 0 5%;
@@ -258,6 +258,9 @@ section{
   width: 100%;
   padding: 0;
   background: #2777b7;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  color: #f2f2f2;
 }
 
 #contact-me iframe{
@@ -275,7 +278,7 @@ section{
 
 .contact-item{margin: 40px;}
 .contact-info a{
-  color: #808080;
+  color: #f2f2f2;
   margin: 0 25px;
   -webkit-transition: color 500ms ease-in-out;
   -moz-transition: color 500ms ease-in-out;
